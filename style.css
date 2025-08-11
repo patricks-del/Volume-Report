@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 :root {
   font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial;
   --bg-main: #343541;
