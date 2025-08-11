@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial;
+  --bg-main: #343541;
+  --bg-card: #444654;
+  --text-main: #ECECF1;
+  --text-muted: #ECECF1;
+  --border-color: #565869;
+  --accent-color: #19C37D;
+  --accent-hover: #15A06B;
+  --input-bg: #40414F;
+  --placeholder-color: #8E8EA0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-main);
+  margin: 0;
+  color: var(--text-main);
+}
+
+.card {
+  width: min(560px, 95%);
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text-main);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--placeholder-color);
+}
+
+button {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  background: var(--accent-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+.hidden {
+  display: none;
+}
+
+#msg {
+  margin-top: 12px;
+  color: var(--accent-color);
+  font-weight: 600;
+}
