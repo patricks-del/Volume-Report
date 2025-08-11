@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Custom Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Volume Report</h1>
+
+    <form id="myForm" method="POST" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSf-Si8Cz93PcSaSZOPWCZPB1k-Uz2rOkB3QA74P50hPeaa-gw/formResponse" target="hidden_iframe">
+      
+      <label for="12PM">12:00 PM Prediction</label>
+      <input id="12PM" name="entry.1689553652" type="number" step="1" required>
+
+      <label for="4PM">4:00 PM Prediction</label>
+      <input id="4PM" name="entry.515314717" type="number" step="1" required>
+
+      <label for="6PM">6:00 PM Prediction</label>
+      <input id="6PM" name="entry.2076126275" type="number" step="1" required>
+
+      <label for="8PM">8:00 PM Prediction</label>
+      <input id="8PM" name="entry.2107271681" type="number" step="1" required>
+
+      <label for="Total">Total Volume Processed by End of Shift</label>
+      <small>(Include units, e.g., boxes, pallets, etc.)</small>
+      <input id="Total" name="entry.1582116387" type="text" required>
+
+      <label for="MidNight">Trucks Arriving After Midnight</label>
+      <input id="MidNight" name="entry.1788259732" type="number" step="1" required>
+
+    
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="msg" class="hidden">Thanks! Your response was submitted.</div>
+  </div>
+
+  <!-- hidden iframe prevents the page from navigating away on submit -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
